@@ -16,7 +16,8 @@ prob_num = len(my)
 
 for i in range(prob_num):
     if right[i] != my[i]:
-        print("{num: >2}. {right} ({my})".format( \
+        print("{num: >2}. \x1b[38;5;196m{my}\x1b[0m" \
+                " -> \x1b[38;5;46m{right}\x1b[0m".format( \
                 num=i + 1, right=right[i], my=my[i]))
         count += 1
 
