@@ -20,5 +20,5 @@ for i in range(prob_num):
                 num=i + 1, right=right[i], my=my[i]))
         count += 1
 
-if count > 0: print("Total/Wrong/Right/Rate: {}".format( \
-            prob_num, count, prob_num - count, count / prob_num))
+if count > 0: print("Total/Wrong/Right/Rate: {}/{}/{}/{:.2%}".format( \
+            prob_num, count, prob_num - count, 1 - count / prob_num))
