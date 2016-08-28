@@ -4,8 +4,8 @@ import sys
 raw_my = input("Your Answer: ")
 raw_right = input("Correct Answer: ")
 
-my = ''.join(list(filter(lambda a: a in "ABCDEFGHJ?", raw_my)))
-right = ''.join(list(filter(lambda a: a in "ABCDEFGHJ?", raw_right)))
+my = ''.join(list(filter(lambda a: a in "ABCDEFGHJK?", raw_my)))
+right = ''.join(list(filter(lambda a: a in "ABCDEFGHJK?", raw_right)))
 
 if len(my) != len(right):
     print("Length not equal.", file=sys.stderr)
